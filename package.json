@@ -1,0 +1,28 @@
+{
+  "name": "Aersia",
+  "version": "1.0.0",
+  "description": "An electron app to create shortcuts and commands to your daily most sent messages",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "tailwind-watch": "npx tailwindcss -i ./styles/input.css -o ./styles/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiasMarion/Aersia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobiasMarion/Aersia/issues"
+  },
+  "homepage": "https://github.com/tobiasMarion/Aersia#readme",
+  "devDependencies": {
+    "electron": "^26.2.1",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "electron-reloader": "^1.2.3"
+  }
+}
