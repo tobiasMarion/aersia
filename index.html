@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./styles/output.css">
 </head>
 
-<body class="">
+<body>
   <div class="bg-zinc-950 w-full min-h-screen flex flex-col">
     <header class="px-4 py-6 flex items-center justify-between">
       <img src="./assets/logo.svg" alt="Aersia">
@@ -21,7 +21,7 @@
 
     <div class="p-6 pb-12 flex items-center gap-4">
       <div
-        class="h-20 w-20 rounded-2xl bg-gradient-to-bl from-yellow-400 to-yellow-600 flex items-center justify-center p-1">
+        class="h-20 w-20 rounded-2xl bg-gradient-to-bl from-amber-400 to-amber-600 flex items-center justify-center p-1">
         <img src="https://api.dicebear.com/5.x/big-smile/svg?seed=user" class="w-full" alt="Avatar">
       </div>
       <div class="title">
@@ -30,12 +30,60 @@
       </div>
     </div>
 
-    <main class="bg-zinc-50 grow rounded-t-4xl p-8 drop-shadow border border-zinc-300">
-      aaaa
+    <main class="bg-zinc-50 max rounded-t-4xl p-8 drop-shadow border border-zinc-300 overflow-auto">
+      <nav>
+        <ul class="flex gap-4">
+          <li class="relative z-10 after:w-full after:transition-all
+          after:absolute after:block after:h-[3px] after:rounded after:bg-amber-500
+          after:bottom-1 after:left-0 after:z-0">
+            <button class="font-semibold text-zinc-800 p-1">Textos-padrão</button>
+          </li>
+          <li><button class="text-zinc-600 p-1">Atalhos</button></li>
+        </ul>
+
+        <p class="mt-2 text-zinc-500 text-sm">Escreva “/comando” e deixe que nós escrevemos aquele texto repetitivo para você.</p>
+      </nav>
+
+      <section id="slash-commands" class="my-8">
+        <button class="w-full py-4 px-6 font-semibold text-zinc-50 bg-gradient-to-bl from-amber-400 to-amber-600 flex gap-4 rounded">
+          <img src="./assets/plus.svg" alt="Novo">
+          Criar novo Texto-padrão
+        </button>
+
+        <ul class="commands my-8">
+          <li class="border block rounded p-4 mb-6">
+            <span class="text-xl">🥳</span>
+            <h2 class="text-lg text-zinc-800 font-medium mt-1">/sac</h2>
+            <p class="text-sm text-zinc-400 font-light">Autocompleta a senha semanal do SAC.</p>
+            <div class="flex justify-between mt-4">
+              <button class="p-2 transition-all rounded-lg hover:bg-amber-50">
+                <img src="./assets/edit.svg" alt="Editar comando">
+              </button>
+              <button class="p-2 transition-all rounded-lg hover:bg-red-50">
+                <img src="./assets/trash.svg" alt="Apagar comando">
+              </button>
+            </div>
+          </li>
+          <li class="border block rounded p-4">
+            <span class="text-xl">🥳</span>
+            <h2 class="text-lg text-zinc-800 font-medium mt-1">/sac</h2>
+            <p class="text-sm text-zinc-400 font-light">Autocompleta a senha semanal do SAC.</p>
+            <div class="flex justify-between mt-4">
+              <button class="p-2 transition-all rounded-lg hover:bg-amber-50">
+                <img src="./assets/edit.svg" alt="Editar comando">
+              </button>
+              <button class="p-2 transition-all rounded-lg hover:bg-red-50">
+                <img src="./assets/trash.svg" alt="Apagar comando">
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
 
-    <footer class="w-full bg-gradient-to-bl from-yellow-400 to-yellow-600 flex justify-center p-1">
-      <p class="text-xs text-zinc-50 font-light">Made with <img src="./assets/heart.svg" alt="Love" class="inline"> by <a href="https://github.com/tobiasMarion">Tobias</a></p>
+    <footer class="fixed bottom-0 left-0 w-full bg-gradient-to-bl from-amber-400 to-amber-600 flex justify-center p-1">
+      <p class="text-xs text-zinc-50 font-light">Made with <img src="./assets/heart.svg" alt="Love" class="inline"> by
+        <a href="https://github.com/tobiasMarion">Tobias</a></p>
     </footer>
   </div>
 
